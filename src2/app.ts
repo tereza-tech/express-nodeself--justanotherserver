@@ -2,6 +2,13 @@ import express from 'express'
 
 const app = express()
 
+/*initialize({
+  app,
+  apiDoc: require("./api/api-doc"),
+  paths: "./api/paths",
+});
+*/
+
 app.use(express.json())
 
 
