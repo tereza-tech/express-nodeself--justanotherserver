@@ -1,0 +1,9 @@
+*.js
+
+/dist/
+/node_modules/
+/package-lock.json
+/src/routes/routes.ts
+/api/
+/src/public/
+/src/routes/
