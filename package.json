@@ -18,7 +18,8 @@
     "body-parser": "^1.19.2",
     "cookie-parser": "^1.4.6",
     "express": "^4.17.3",
-    "express-openapi-validator": "^4.13.6"
+    "express-openapi-validator": "^4.13.6",
+    "swagger-node-codegen": "^1.6.3"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.2",

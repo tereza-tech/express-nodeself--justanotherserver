@@ -9,12 +9,12 @@ servers:
 
 
 paths:
-  /test:
+  /equation:
     get:
       responses:
         '200':
           description: OK
-  /equation:
+  /entries:
     get:
       description: ''
       parameters: []
@@ -27,11 +27,5 @@ paths:
       responses:
         '200':
           description: OK
-  /spec:
-    get:
-      description: 'Specification'
-      parameters: []
-      responses:
-        '200':
-          description: OK
+
         

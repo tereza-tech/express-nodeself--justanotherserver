@@ -1,4 +1,4 @@
-# myapp
+# pythagoras-node
 
 My cool TypeScript app
 
@@ -72,9 +72,9 @@ npm run test:debug
 
 ## Try It
 * Open your browser to [http://localhost:3000](http://localhost:3000)
-* Invoke the `/examples` endpoint 
+* Invoke the `/entries` endpoint 
   ```shell
-  curl http://localhost:3000/api/v1/examples
+  curl http://localhost:3000/api/v1/entries
   ```
 
 

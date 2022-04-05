@@ -31,14 +31,14 @@ export default class ExpressServer {
          process.env.OPENAPI_ENABLE_RESPONSE_VALIDATION &&
          process.env.OPENAPI_ENABLE_RESPONSE_VALIDATION.toLowerCase() === 'true'
        );
-       app.use(process.env.OPENAPI_SPEC || '/spec', express.static(apiSpec));
+      /* app.use(process.env.OPENAPI_SPEC || '/spec', express.static(apiSpec));
        app.use(
          OpenApiValidator.middleware({
            apiSpec,
            validateResponses,
            ignorePaths: /.*\/spec(\/|$)/,
          })
-       );
+       );*/
   }
 
    router(routes: (app: Application) => void): ExpressServer {
