@@ -1,11 +1,11 @@
-FROM node:14-alpine
+FROM node:slim
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN npm install -g pnpm
 
-COPY . /usr/src/app
-RUN npm install
+WORKDIR /usr/src/app/express-server
+COPY . .
 
-EXPOSE 3000
+RUN pnpm i --prefer-offline
+RUN npm run build
 
-CMD [ "npm", "start" ]
+CMD npm run start:prod

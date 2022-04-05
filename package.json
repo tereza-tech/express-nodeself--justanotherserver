@@ -4,12 +4,15 @@
   "description": "My cool TypeScript app",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node dist/server/index.js",
+    "start": "ts-node src/server/index.ts",
     "build": "tsc",
-    "build:docker": "docker build -t pythagoras/express-ts .",
+    "build:routes": "mkdir -p src/routes && tsoa routes",
+    "build:swagger": "mkdir -p api && mkdir -p api/dist && tsoa swagger",
+    "build:ts": "tsc -p src",
+    "build:all": "npm run build:routes && npm run build:swagger && npm run build:ts",
+    "server": "node dist/server/index.js",
     "dev": "nodemon src/server/index.ts",
-    "lint": "eslint -c .eslintrc.js \"{server}/**/*.{js,ts,tsx}\" --quiet",
-    "lint:fix": "eslint -c .eslintrc.js \"{server}/**/*.{js,ts,tsx}\" --quiet --fix"
+    "build:docker": "docker build -t pythagoras/node ."
   },
   "dependencies": {
     "body-parser": "^1.19.2",

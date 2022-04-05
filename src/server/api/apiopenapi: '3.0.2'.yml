@@ -1,0 +1,37 @@
+openapi: '3.0.2'
+info:
+  title: API Title
+  version: '1.0'
+servers:
+  - url: https://api.server.test/v1
+  - url: https://api.server.test/pythagoras
+    description: Server description
+
+
+paths:
+  /test:
+    get:
+      responses:
+        '200':
+          description: OK
+  /equation:
+    get:
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: OK
+    post:
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: OK
+  /spec:
+    get:
+      description: 'Specification'
+      parameters: []
+      responses:
+        '200':
+          description: OK
+        
